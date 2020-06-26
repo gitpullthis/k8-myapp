@@ -11,8 +11,8 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
     let data = os.networkInterfaces();
-    console.log(data.lo0[0]);
-    res.json(data.lo0[0]);
+    console.log(data);
+    res.json(data);
 });
 
 app.listen(PORT, HOST);
